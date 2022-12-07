@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="991" height="173.477" viewBox="0 0 991 173.477">
+    <defs>
+        <clipPath id="da8afubvva">
+            <rect data-name="Rounded Rectangle 1" width="991" height="173.477" rx="14" transform="translate(450.277 1596.388)" style="fill:none"/>
+        </clipPath>
+    </defs>
+    <g data-name="Group 10">
+        <g data-name="Group 3">
+            <g data-name="Group 2">
+                <g data-name="Group 1" style="clip-path:url(#da8afubvva)" transform="translate(-450.278 -1596.388)">
+                    <rect data-name="Rounded Rectangle 1" width="991" height="173.477" rx="14" transform="translate(450.277 1596.388)" style="fill:#810567"/>
+                    <circle data-name="Ellipse 1" cx="138.427" cy="138.427" r="138.427" transform="translate(468.239 1556.334)" style="fill:#5a0548"/>
+                    <circle data-name="Ellipse 2" cx="138.427" cy="138.427" r="138.427" transform="translate(681.039 1556.334)" style="fill:#bf30b2;mix-blend-mode:multiply;isolation:isolate"/>
+                </g>
+            </g>
+            <path data-name="Path 1" d="M743.19 1632.383a4.226 4.226 0 0 0-1.678-.73 4.368 4.368 0 0 0-1.856.038l-65.939 15.271a4.143 4.143 0 0 0-2.25 1.353 3.64 3.64 0 0 0-.871 2.347v52.52a19.722 19.722 0 0 0-11.7-2.861 19.331 19.331 0 0 0-11.115 4.408 16.879 16.879 0 0 0-5.831 9.81 16.1 16.1 0 0 0 1.922 11.054 18.092 18.092 0 0 0 8.867 7.617 19.948 19.948 0 0 0 12.049.951 18.765 18.765 0 0 0 10.127-6.119 16.385 16.385 0 0 0 3.915-10.594v-44.727l57.7-13.362v28.551a19.721 19.721 0 0 0-11.692-2.861 19.336 19.336 0 0 0-11.12 4.408 16.893 16.893 0 0 0-5.83 9.809 16.1 16.1 0 0 0 1.922 11.055 18.1 18.1 0 0 0 8.865 7.619 19.956 19.956 0 0 0 12.049.951 18.757 18.757 0 0 0 10.127-6.118 16.416 16.416 0 0 0 3.92-10.595v-66.788a3.61 3.61 0 0 0-.42-1.672 3.9 3.9 0 0 0-1.161-1.335z" style="fill:#db7fd2" transform="translate(-450.278 -1596.388)"/>
+        </g>
+        <text transform="translate(537.656 125)" style="font-size:107px;fill:#fff;font-family:Montserrat-Bold,Montserrat;font-weight:700;opacity:.286"><tspan x="0" y="0">Banner</tspan></text>
+        <text transform="translate(325.656 123)" style="font-size:83px;fill:#fff;font-family:Montserrat-Bold,Montserrat;font-weight:700;opacity:.286"><tspan x="0" y="0">ADV</tspan></text>
+    </g>
+</svg>

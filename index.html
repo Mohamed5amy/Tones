@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/style/style.css">
+
+  <!-- Font Awesom -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/images//icons/title-icon.png">
+
+  <!-- Title -->
+  <title>Tones</title>
+
+</head>
+<body>
+
+
+  <!-- Navbar -->
+  <nav class="navbar">
+
+    <div class="container d-flex align-items-center justify-content-between gap-3">
+
+      <div class="logo">
+        <a href="/">        
+          <img src="assets//images//icons/logo.svg" alt="">
+        </a>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Search...">
+        <img src="assets//images//icons/search.svg" alt="">
+      </div>
+
+      <div class="d-flex align-items-center gap-5">
+
+        <div class="icons d-flex align-items-center gap-4">
+          <div class="lang rounded">AR</div>
+          <img src="assets//images//icons/heart.svg" alt="">
+        </div>
+
+        <div class="profile d-flex align-items-center gap-2">
+
+          <div class="image"><img src="assets/images/person.jpg" alt=""></div>
+
+          <div class="name">
+            <h3>Hello</h3>
+            <h2>Your Name</h2>
+          </div>
+
+          <img src="assets/images/icons/down-arrow.svg" alt="" id="arrow">
+          
+        </div>
+
+      </div>
+
+      <div class="menu-btn" id="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <div class="menu" id="menu">
+        <a href="/"><li>Favorite</li></a>
+        <a href="/"><li>Profile</li></a>
+        <a href="/"><li class="sign-out">Sign Out</li></a>
+        <a href="/"><li>العربية</li></a>
+      </div>
+      
+    </div>
+    
+  </nav>
+
+
+  <!-- Banner -->
+  <div class="banner">
+
+    <div class="container">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="assets//images/banner.svg" class="d-block w-100" alt="...">
+          </div>
+
+          <div class="carousel-item">
+            <img src="assets//images/banner.svg" class="d-block w-100" alt="...">
+          </div>
+
+          <div class="carousel-item">
+            <img src="assets//images/banner.svg" class="d-block w-100" alt="...">
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+      
+    </div>
+    
+  </div>
+
+
+  <!-- Tones -->
+  <div class="tones">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-6 col-md-4 col-lg-3 mb-5">
+          <div class="image">
+            <img src="assets/images/item5.jpg" alt="">
+            <div class="hover">
+              <div class="icon"><i class="fa-solid fa-heart heart"></i></div>
+              <img src="assets/images/icons/play.svg" alt="" class="play">
+            </div>
+          </div>
+          <h2>Ringtone name</h2>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-5">
+          <div class="image">
+            <img src="assets/images/item4.jpg" alt="">
+            <div class="hover">
+              <i class="fa-solid fa-heart heart"></i>
+              <img src="assets/images/icons/play.svg" alt="" class="play">
+            </div>
+          </div>
+          <h2>Ringtone name</h2>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-5">
+          <div class="image">
+            <img src="assets/images/item3.jpg" alt="">
+            <div class="hover">
+              <i class="fa-solid fa-heart heart"></i>
+              <img src="assets/images/icons/play.svg" alt="" class="play">
+            </div>
+          </div>
+          <h2>Ringtone name</h2>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-5">
+          <div class="image">
+            <img src="assets/images/item2.jpg" alt="">
+            <div class="hover">
+              <i class="fa-solid fa-heart heart"></i>
+              <img src="assets/images/icons/play.svg" alt="" class="play">
+            </div>
+          </div>
+          <h2>Ringtone name</h2>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-5">
+          <div class="image">
+            <img src="assets/images/item4.jpg" alt="">
+            <div class="hover">
+              <i class="fa-solid fa-heart heart"></i>
+              <img src="assets/images/icons/play.svg" alt="" class="play">
+            </div>
+          </div>
+          <h2>Ringtone name</h2>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-5">
+          <div class="image">
+            <img src="assets/images/item3.jpg" alt="">
+            <div class="hover">
+              <i class="fa-solid fa-heart heart"></i>
+              <img src="assets/images/icons/play.svg" alt="" class="play">
+            </div>
+          </div>
+          <h2>Ringtone name</h2>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-5">
+          <div class="image">
+            <img src="assets/images/item5.jpg" alt="">
+            <div class="hover">
+              <i class="fa-solid fa-heart heart"></i>
+              <img src="assets/images/icons/play.svg" alt="" class="play">
+            </div>
+          </div>
+          <h2>Ringtone name</h2>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 mb-5">
+          <div class="image">
+            <img src="assets/images/item2.jpg" alt="">
+            <div class="hover">
+              <i class="fa-solid fa-heart heart"></i>
+              <img src="assets/images/icons/play.svg" alt="" class="play">
+            </div>
+          </div>
+          <h2>Ringtone name</h2>
+        </div>
+
+      </div>
+      <div class="pagination d-flex justify-content-center gap-4">
+        <div class="num active">1</div>
+        <div class="num">2</div>
+        <div class="num">3</div>
+        <div class="num">4</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <div class="footer">
+
+    <div class="container">
+
+      <div class="logo mb-4">
+        <a href="/"><img src="assets/images/icons/footer-logo.svg" alt=""></a>
+      </div>
+
+      <div class="row">
+
+        <div class=" col-12 col-sm-6 col-md-2">
+          <a href="/"><li>Terms and conditions</li></a>
+          <a href=""><li>How to use</li></a>
+          <a href=""><li>subscribe</li></a>
+        </div>
+
+        <div class=" col-12 col-sm-6 col-md-2">
+          <a href="/"><li>Terms and conditions</li></a>
+          <a href=""><li>How to use</li></a>
+          <a href=""><li>subscribe</li></a>
+        </div>
+
+        <div class=" col-12 col-sm-6 col-md-2">
+          <a href="/"><li>Terms and conditions</li></a>
+          <a href=""><li>How to use</li></a>
+          <a href=""><li>subscribe</li></a>
+        </div>
+        
+      </div>
+
+      <p class="rights">All Rights Reseved 2022</p>
+      
+    </div>
+
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <!-- Bootstrab -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Font awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Menu -->
+  <script>
+    const btn = document.getElementById("menu-btn")
+    const menu = document.getElementById("menu")
+    const arrow = document.getElementById("arrow")
+
+    btn.addEventListener("click" , () => {
+      menu.classList.toggle("active")
+    })
+
+    arrow.addEventListener("click" , () => {
+      menu.classList.toggle("active")
+    })
+  </script>
+
+</body>
+</html>
