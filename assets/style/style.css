@@ -8,6 +8,10 @@
   -o-transition: 0.2s linear;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 body::-webkit-scrollbar {
   width: 8px;
 }
@@ -143,6 +147,33 @@ svg {
 }
 .navbar .menu.active {
   display: block;
+}
+
+.selection span {
+  background-color: #810567;
+  color: white;
+  cursor: pointer;
+  font-size: 15px 10px;
+  font-weight: 500;
+  display: block;
+  width: 200px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.selection span:hover {
+  background-color: #580346;
+}
+.selection .container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .tones {
@@ -285,6 +316,7 @@ svg {
   font-weight: 500;
   text-transform: capitalize;
   white-space: nowrap;
+  padding: 10px 0;
 }
 .footer .row a li:hover {
   color: #810567;

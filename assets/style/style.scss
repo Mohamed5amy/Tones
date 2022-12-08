@@ -21,6 +21,10 @@ $primary :#810567;
   -o-transition: .2s linear;
 }
 
+body {
+  overflow-x:hidden;
+}
+
 // Scroll 
 body::-webkit-scrollbar {
   width: 8px;               
@@ -189,6 +193,36 @@ svg {
   
 }
 
+.selection {
+
+  span {
+    background-color: $primary;
+    color: white;
+    cursor: pointer;
+    font-size: 15px 10px;
+    font-weight: 500;
+    display: block;
+    width: 200px;
+
+    &:hover {
+      background-color: #580346;
+    }
+    
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: space-between;
+  }
+}
+
 .tones {
   padding-top: 50px;
   padding-bottom: 150px;
@@ -341,6 +375,7 @@ svg {
         font-weight: 500;
         text-transform: capitalize;
         white-space: nowrap;
+        padding: 10px 0;
 
         &:hover {
           color: $primary;
