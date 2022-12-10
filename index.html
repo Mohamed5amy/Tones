@@ -33,6 +33,43 @@
 
 <body>
 
+  <!-- Login And Sign up Boxes Just Remove d-none from classes to appear -->
+  <div class="register d-none">
+    <div class="content">
+      
+      <div class="icon" id="exit-reg"><i class="fa-solid fa-xmark"></i></div>
+
+      <h2>Registration</h2>
+
+      <form action="">
+        <input type="text" placeholder="Name">
+        <input type="number" id="myNumber">
+
+        <button>Register</button>
+      </form>
+      
+      
+    </div>
+  </div>
+  
+  <div class="register activation d-none">
+    <div class="content">
+      
+      <!-- <div class="icon" id="exit-reg"><i class="fa-solid fa-xmark"></i></div> -->
+
+      <h2>Registration</h2>
+
+      <form action="">
+        
+        <input type="number">
+
+        <button>Send</button>
+      </form>
+      
+      
+    </div>
+  </div>
+
   <!-- Navbar -->
   <nav class="navbar">
 
@@ -640,6 +677,17 @@
         }
       }
     });
+  </script>
+
+  <!-- Default number and exit -->
+  <script>
+    document.getElementById("myNumber").defaultValue = 996 ;
+
+    const exitReg = document.getElementById("exit-reg")
+    const regBox = document.querySelector(".register")
+    exitReg.addEventListener("click" , () => {
+      regBox.classList.add("d-none")
+    })
   </script>
 
 </body>

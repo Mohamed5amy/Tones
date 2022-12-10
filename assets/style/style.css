@@ -41,6 +41,129 @@ svg {
   -o-transition: 0.2s !important;
 }
 
+.register {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(129, 5, 102, 0.7294117647);
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+.register .content {
+  text-align: center;
+  background-color: white;
+  padding: 40px 70px 30px;
+  border-radius: 22px;
+  position: relative;
+  min-width: 350px;
+}
+.register .content .icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.register .content .icon:hover {
+  color: #810567;
+}
+.register .content h2 {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 64px;
+  color: #810567;
+}
+.register .content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.register .content form input {
+  padding: 12px 24px;
+  border-radius: 7px;
+  border: solid 1px #810567;
+  font-size: 11px;
+  font-weight: 600;
+  color: #810567;
+  width: 270px;
+  margin-bottom: 23px;
+}
+.register .content form input::-webkit-input-placeholder {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(172, 10, 148, 0.3058823529);
+}
+.register .content form input::-moz-placeholder {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(172, 10, 148, 0.3058823529);
+}
+.register .content form input:-ms-input-placeholder {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(172, 10, 148, 0.3058823529);
+}
+.register .content form input::-ms-input-placeholder {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(172, 10, 148, 0.3058823529);
+}
+.register .content form input::placeholder {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(172, 10, 148, 0.3058823529);
+}
+.register .content form input:last-of-type {
+  margin-bottom: 90px;
+}
+.register .content form input:focus {
+  outline: none;
+}
+.register .content form button {
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #810567;
+  border-radius: 7px;
+  color: white;
+  padding: 10px 0;
+}
+.register .content form button:hover {
+  background-color: #63044e;
+}
+.register input::-webkit-outer-spin-button,
+.register input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.register input[type=number] {
+  -moz-appearance: textfield;
+}
+.register.activation .content form input {
+  display: block;
+  margin: 0 auto 100px;
+  border: none;
+  padding: 0 0 10px 0;
+  width: 6ch;
+  background: repeating-linear-gradient(90deg, #810567 0, #810567 1ch, transparent 0, transparent 1.5ch) 0 100%/10ch 2px no-repeat;
+  font: 5ch droid sans mono, consolas, monospace;
+  letter-spacing: 0.5ch;
+  color: #810567;
+  text-transform: uppercase;
+}
+
 .navbar {
   padding: 60px 0 47px;
 }
