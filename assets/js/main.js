@@ -15,6 +15,12 @@
   //  Player 
 
   const items = document.querySelectorAll(".tones .item")
+
+  const songs = document.querySelectorAll("audio")
+
+  const players = document.querySelectorAll(".player")
+
+  console.log(players)
   
   items.forEach((item) => {
     const player = item.children[2]
@@ -27,9 +33,16 @@
       heart.classList.toggle("active")
     })
 
-    
-
     playBtn.addEventListener("click" , () => {
+
+      songs.forEach((song) => {
+        song.pause()
+      })
+
+      players.forEach((player) => {
+        player.classList.remove("active")
+      })
+      
       audio.play()
       player.classList.add("active")
     })
@@ -41,3 +54,5 @@
     
     
   })
+
+

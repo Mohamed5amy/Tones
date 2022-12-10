@@ -196,27 +196,47 @@ svg {
           justify-content: space-between;
 }
 
-.tones {
+.select-type {
+  padding-top: 50px;
+}
+.select-type select {
+  border: none;
+  border: 2px solid #810567;
+  color: #810567;
+  text-transform: capitalize;
+}
+.select-type select:focus {
+  outline: none;
+}
+
+#tones-home {
   padding-top: 50px;
   padding-bottom: 150px;
 }
-.tones .row {
+#tones-home .type > .header svg {
+  font-size: 40px;
+  color: #810567;
+}
+#tones-home .type > .header h2 {
+  font-weight: 600;
+  font-size: 30px;
+}
+#tones-home .my-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 50px;
 }
-.tones .row h2 {
+#tones-home .my-row h2 {
   font-size: 20px;
   font-weight: 600;
   line-height: 0.53;
   color: #810567;
   text-align: center;
 }
-.tones .row .image {
+#tones-home .my-row .image {
   margin-bottom: 20px;
   height: auto;
   height: 300px;
@@ -228,18 +248,18 @@ svg {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
-.tones .row .image:hover .hover {
+#tones-home .my-row .image:hover .hover {
   opacity: 1;
   cursor: pointer;
 }
-.tones .row .image:hover img {
+#tones-home .my-row .image:hover img {
   transform: scale(1.1) rotate(2deg);
   -webkit-transform: scale(1.1) rotate(2deg);
   -moz-transform: scale(1.1) rotate(2deg);
   -ms-transform: scale(1.1) rotate(2deg);
   -o-transform: scale(1.1) rotate(2deg);
 }
-.tones .row .image .hover {
+#tones-home .my-row .image .hover {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -253,17 +273,17 @@ svg {
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
-.tones .row .image .hover .heart {
+#tones-home .my-row .image .hover .heart {
   position: absolute;
   font-size: 20px;
   top: 20px;
   left: 20px;
   color: white;
 }
-.tones .row .image .hover .heart:hover, .tones .row .image .hover .heart.active {
+#tones-home .my-row .image .hover .heart:hover, #tones-home .my-row .image .hover .heart.active {
   color: red;
 }
-.tones .row .image .hover .play {
+#tones-home .my-row .image .hover .play {
   max-width: 50px;
   max-height: 50px;
   position: absolute;
@@ -275,17 +295,187 @@ svg {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
-.tones .row .image .hover .play:hover, .tones .row .image .hover .play.active {
+#tones-home .my-row .image .hover .play:hover, #tones-home .my-row .image .hover .play.active {
   -webkit-filter: brightness(2);
           filter: brightness(2);
 }
-.tones .row .image img {
+#tones-home .my-row .image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.tones .row .player {
+#tones-home .my-row .player {
+  display: none;
+  position: fixed;
+  width: 100.5%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0 20px;
+  background-color: white;
+}
+#tones-home .my-row .player.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#tones-home .my-row .player .content {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 22px;
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  -ms-border-radius: 22px;
+  -o-border-radius: 22px;
+}
+#tones-home .my-row .player .content .icon {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  cursor: pointer;
+}
+#tones-home .my-row .player .content .icon:hover {
+  color: #810567;
+}
+#tones-home .my-row .player .content img {
+  width: 170px;
+  height: 170px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#tones-home .my-row .player .content h2 {
+  font-size: 16px;
+}
+#tones-home .my-row .player .content button {
+  width: 80%;
+  background-color: #810567;
+  border: none;
+  color: white;
+  font-weight: 500;
+}
+#tones-home .my-row .player .content button:hover {
+  background-color: #580346;
+}
+#tones-home .my-row .player .content .price {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 0.44;
+  color: #ac0a93;
+}
+#tones-home .my-row .player .content .price span {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 0.4;
+}
+#tones-home .my-row .player .content p {
+  font-size: 10px;
+  font-weight: 600;
+  color: #454545;
+}
+
+#tones-type {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+#tones-type .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 50px;
+}
+#tones-type .row h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 0.53;
+  color: #810567;
+  text-align: center;
+}
+#tones-type .row .image {
+  margin-bottom: 20px;
+  height: auto;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#tones-type .row .image:hover .hover {
+  opacity: 1;
+  cursor: pointer;
+}
+#tones-type .row .image:hover img {
+  transform: scale(1.1) rotate(2deg);
+  -webkit-transform: scale(1.1) rotate(2deg);
+  -moz-transform: scale(1.1) rotate(2deg);
+  -ms-transform: scale(1.1) rotate(2deg);
+  -o-transform: scale(1.1) rotate(2deg);
+}
+#tones-type .row .image .hover {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(129, 5, 102, 0.7019607843);
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+#tones-type .row .image .hover .heart {
+  position: absolute;
+  font-size: 20px;
+  top: 20px;
+  left: 20px;
+  color: white;
+}
+#tones-type .row .image .hover .heart:hover, #tones-type .row .image .hover .heart.active {
+  color: red;
+}
+#tones-type .row .image .hover .play {
+  max-width: 50px;
+  max-height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+#tones-type .row .image .hover .play:hover, #tones-type .row .image .hover .play.active {
+  -webkit-filter: brightness(2);
+          filter: brightness(2);
+}
+#tones-type .row .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#tones-type .row .player {
   display: none;
   position: fixed;
   width: 100%;
@@ -301,12 +491,12 @@ svg {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.tones .row .player.active {
+#tones-type .row .player.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.tones .row .player .content {
+#tones-type .row .player .content {
   max-width: 410px;
   padding: 30px 100px;
   background-color: white;
@@ -317,16 +507,16 @@ svg {
   -ms-border-radius: 22px;
   -o-border-radius: 22px;
 }
-.tones .row .player .content .icon {
+#tones-type .row .player .content .icon {
   position: absolute;
   top: 20px;
   right: 20px;
   cursor: pointer;
 }
-.tones .row .player .content .icon:hover {
+#tones-type .row .player .content .icon:hover {
   color: #810567;
 }
-.tones .row .player .content img {
+#tones-type .row .player .content img {
   width: 170px;
   height: 170px;
   margin-bottom: 20px;
@@ -336,59 +526,60 @@ svg {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
-.tones .row .player .content h2 {
+#tones-type .row .player .content h2 {
   font-size: 16px;
 }
-.tones .row .player .content button {
+#tones-type .row .player .content button {
   width: 100%;
   background-color: #810567;
   border: none;
   color: white;
   font-weight: 500;
 }
-.tones .row .player .content button:hover {
+#tones-type .row .player .content button:hover {
   background-color: #580346;
 }
-.tones .row .player .content .price {
+#tones-type .row .player .content .price {
   font-size: 18px;
   font-weight: 600;
   line-height: 0.44;
   color: #ac0a93;
 }
-.tones .row .player .content .price span {
+#tones-type .row .player .content .price span {
   font-size: 10px;
   font-weight: 600;
   line-height: 0.4;
 }
-.tones .row .player .content p {
+#tones-type .row .player .content p {
   font-size: 10px;
   font-weight: 600;
   color: #454545;
 }
-.tones .pagination .num {
-  background-color: #d0d0d0;
-  color: #fff;
-  font-size: 13px;
-  width: 30px;
-  height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+#tones-type .header {
+  margin-bottom: 60px;
 }
-.tones .pagination .num:hover, .tones .pagination .num.active {
+#tones-type .header svg {
+  font-size: 40px;
+  color: #810567;
+}
+#tones-type .header h2 {
+  font-weight: 600;
+  font-size: 30px;
+  position: relative;
+}
+#tones-type .header h2::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  width: 70%;
+  height: 3px;
   background-color: #810567;
-  cursor: pointer;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 .footer {

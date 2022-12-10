@@ -14,6 +14,12 @@
   <!-- Font Awesom -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- Link Swiper's CSS -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+
   <!-- Fav Icon -->
   <link rel="icon" type="image/x-icon" href="assets/images//icons/title-icon.png">
 
@@ -81,7 +87,6 @@
     
   </nav>
 
-
   <!-- Banner -->
   <div class="banner">
 
@@ -130,126 +135,422 @@
     
   </div>
 
-  <!-- selection -->
-  <div class="selection pt-5">
-    <div class="container flex-wrap d-flex align-items-center justify-content-between gap-3">
-      <span class="py-2 text-center ">Music Type</span>
-      <span class="py-2 text-center ">Music Type</span>
-      <span class="py-2 text-center ">Music Type</span>
-      <span class="py-2 text-center ">Music Type</span>
-      <span class="py-2 text-center ">Music Type</span>
-      <span class="py-2 text-center ">Music Type</span>
+  <div class="select-type">
+    <div class="container d-flex justify-content-center">
+      <select class="py-3 px-2 rounded-pill">
+        <option value="" selected disabled>Select Your Favourite Type...</option>
+        <option value="all">all</option>
+        <option value="MusiQ1">MusiQ1</option>
+        <option value="MusiQ2">MusiQ2</option>
+        <option value="MusiQ3">MusiQ3</option>
+        <option value="MusiQ4">MusiQ4</option>
+        <option value="MusiQ5">MusiQ5</option>
+      </select>
     </div>
   </div>
   
   <!-- Tones -->
-  <div class="tones">
+  <div class="tones" id="tones-home">
     <div class="container">
-      <div class="row">
+      
+      <div class="type mb-5">
 
-        <div class="item col-6 col-md-4 col-lg-3 mb-5">
-          <div class="image">
-            <img src="assets/images/item5-min.jpg" alt="">
-            <div class="hover">
-              <div class="heart"><i class="fa-solid fa-heart "></i></div>
-              <img src="assets/images/icons/play.svg" alt="" class="play" id="play">
-            </div>
-          </div>
-          <h2>Ringtone name</h2>
-          <div class="player" id="player">
-            <audio src="assets/music/music1.mp3" id="audio"></audio>
-            <div class="content">
-              <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
-              <img src="assets/images/item5-min.jpg" alt="">
-              <h2 class="mb-3" >Ringtone name</h2>
-              <a href="assets/music/music1.mp3" download="Tones" >
-                <button class="mb-4 py-2 ">Download</button>
-              </a>
-              <div class="price text-center mb-2">5.75 SAR <span>Monthly</span> </div>
-              <p class="text-center">include tax 15%</p>
-            </div>
-          </div>
+        <div class="header d-flex align-items-center gap-3 mb-4">
+          <i class="fa-solid fa-music"></i>
+          <h2 class="mb-0">Music Type</h2>
         </div>
-        <div class="item col-6 col-md-4 col-lg-3 mb-5">
-          <div class="image">
-            <img src="assets/images/item4-min.jpg" alt="">
-            <div class="hover">
-              <div class="heart"><i class="fa-solid fa-heart "></i></div>
-              <img src="assets/images/icons/play.svg" alt="" class="play">
-            </div>
-          </div>
-          <h2>Ringtone name</h2>
-          <div class="player" id="player">
-            <audio src="assets/music/music2.mp3" id="audio"></audio>
-            <div class="content">
-              <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
-              <img src="assets/images/item4-min.jpg" alt="">
-              <h2 class="mb-3" >Ringtone name</h2>
-              <a href="assets/music/music2.mp3" download="Tones" >
-                <button class="mb-4 py-2 ">Download</button>
-              </a>
-              <div class="price text-center mb-2">5.75 SAR <span>Monthly</span> </div>
-              <p class="text-center">include tax 15%</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-6 col-md-4 col-lg-3 mb-5">
-          <div class="image">
-            <img src="assets/images/item3-min.jpg" alt="">
-            <div class="hover">
-              <div class="heart"><i class="fa-solid fa-heart "></i></div>
-              <img src="assets/images/icons/play.svg" alt="" class="play">
-            </div>
-          </div>
-          <h2>Ringtone name</h2>
-          <div class="player" id="player">
-            <audio src="assets/music/music3.mp3" id="audio"></audio>
-            <div class="content">
-              <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
-              <img src="assets/images/item3-min.jpg" alt="">
-              <h2 class="mb-3" >Ringtone name</h2>
-              <a href="assets/music/music3.mp3" download="Tones" >
-                <button class="mb-4 py-2 ">Download</button>
-              </a>
-              <div class="price text-center mb-2">5.75 SAR <span>Monthly</span> </div>
-              <p class="text-center">include tax 15%</p>
-            </div>
-          </div>
-        </div>
-        <div class="item col-6 col-md-4 col-lg-3 mb-5">
-          <div class="image">
-            <img src="assets/images/item2-min.jpg" alt="">
-            <div class="hover">
-              <div class="heart"><i class="fa-solid fa-heart "></i></div>
-              <img src="assets/images/icons/play.svg" alt="" class="play">
-            </div>
-          </div>
-          <h2>Ringtone name</h2>
-          <div class="player" id="player">
-            <audio src="assets/music/music4.mp3" id="audio"></audio>
-            <div class="content">
-              <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
-              <img src="assets/images/item2-min.jpg" alt="">
-              <h2 class="mb-3" >Ringtone name</h2>
-              <a href="assets/music/music4.mp3" download="Tones" >
-                <button class="mb-4 py-2 ">Download</button>
-              </a>
-              <div class="price text-center mb-2">5.75 SAR <span>Monthly</span> </div>
-              <p class="text-center">include tax 15%</p>
-            </div>
-          </div>
-        </div>
+        
+        <div class="my-row swiper mySwiper">
 
+          <div class="swiper-wrapper items">
+  
+            <div class="item swiper-slide">
+              <div class="image">
+                <img src="assets/images/item5-min.jpg" alt="">
+                <div class="hover">
+                  <div class="heart"><i class="fa-solid fa-heart "></i></div>
+                  <img src="assets/images/icons/play.svg" alt="" class="play" id="play">
+                </div>
+              </div>
+              <h2>Ringtone name</h2>
+              <div class="player" id="player">
+                <audio src="assets/music/music1.mp3" id="audio"></audio>
+                <div class="content">
+                  <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
+                  <img src="assets/images/item5-min.jpg" alt="">
+                  <h2 class="mb-3" >Ringtone name</h2>
+                  <a href="assets/music/music1.mp3" download="Tones" >
+                    <button class="mb-4 py-2 ">Download</button>
+                  </a>
+                  <div class="price text-center mb-2">5.75 SAR <span>Monthly</span> </div>
+                  <p class="text-center">include tax 15%</p>
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="image">
+                <img src="assets/images/item4-min.jpg" alt="">
+                <div class="hover">
+                  <div class="heart"><i class="fa-solid fa-heart "></i></div>
+                  <img src="assets/images/icons/play.svg" alt="" class="play">
+                </div>
+              </div>
+              <h2>Ringtone name</h2>
+              <div class="player" id="player">
+                <audio src="assets/music/music2.mp3" id="audio"></audio>
+                <div class="content">
+                  <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
+                  <img src="assets/images/item4-min.jpg" alt="">
+                  <h2 class="mb-3" >Ringtone name</h2>
+                  <a href="assets/music/music2.mp3" download="Tones" >
+                    <button class="mb-4 py-2 ">Download</button>
+                  </a>
+                  <div class="price text-center mb-2">5.75 SAR <span>Monthly</span> </div>
+                  <p class="text-center">include tax 15%</p>
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="image">
+                <img src="assets/images/item3-min.jpg" alt="">
+                <div class="hover">
+                  <div class="heart"><i class="fa-solid fa-heart "></i></div>
+                  <img src="assets/images/icons/play.svg" alt="" class="play">
+                </div>
+              </div>
+              <h2>Ringtone name</h2>
+              <div class="player" id="player">
+                <audio src="assets/music/music3.mp3" id="audio"></audio>
+                <div class="content">
+                  <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
+                  <img src="assets/images/item3-min.jpg" alt="">
+                  <h2 class="mb-3" >Ringtone name</h2>
+                  <a href="assets/music/music3.mp3" download="Tones" >
+                    <button class="mb-4 py-2 ">Download</button>
+                  </a>
+                  <div class="price text-center mb-2">5.75 SAR <span>Monthly</span> </div>
+                  <p class="text-center">include tax 15%</p>
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="image">
+                <img src="assets/images/item2-min.jpg" alt="">
+                <div class="hover">
+                  <div class="heart"><i class="fa-solid fa-heart "></i></div>
+                  <img src="assets/images/icons/play.svg" alt="" class="play">
+                </div>
+              </div>
+              <h2>Ringtone name</h2>
+              <div class="player" id="player">
+                <audio src="assets/music/music4.mp3" id="audio"></audio>
+                <div class="content">
+                  <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
+                  <img src="assets/images/item2-min.jpg" alt="">
+                  <h2 class="mb-3" >Ringtone name</h2>
+                  <a href="assets/music/music4.mp3" download="Tones" >
+                    <button class="mb-4 py-2 ">Download</button>
+                  </a>
+                  <div class="price text-center mb-2">5.75 SAR <span>Monthly</span> </div>
+                  <p class="text-center">include tax 15%</p>
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="image">
+                <img src="assets/images/item2-min.jpg" alt="">
+                <div class="hover">
+                  <div class="heart"><i class="fa-solid fa-heart "></i></div>
+                  <img src="assets/images/icons/play.svg" alt="" class="play">
+                </div>
+              </div>
+              <h2>Ringtone name</h2>
+              <div class="player" id="player">
+                <audio src="assets/music/music4.mp3" id="audio"></audio>
+                <div class="content">
+                  <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
+                  <img src="assets/images/item2-min.jpg" alt="">
+                  <h2 class="mb-3" >Ringtone name</h2>
+                  <a href="assets/music/music4.mp3" download="Tones" >
+                    <button class="mb-4 py-2 ">Download</button>
+                  </a>
+                  <div class="price text-center mb-2">5.75 SAR <span>Monthly</span> </div>
+                  <p class="text-center">include tax 15%</p>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
       </div>
-      <div class="pagination d-flex justify-content-center gap-4">
-        <div class="num active">1</div>
-        <div class="num">2</div>
-        <div class="num">3</div>
-        <div class="num">4</div>
+
+      <div class="type mb-5">
+
+        <div class="header d-flex align-items-center gap-3 mb-4">
+          <i class="fa-solid fa-music"></i>
+          <h2 class="mb-0">Music Type</h2>
+        </div>
+        
+        <div class="my-row swiper mySwiper">
+
+          <div class="swiper-wrapper items">
+  
+            <div class="item swiper-slide">
+              <div class="image">
+                <img src="assets/images/item5-min.jpg" alt="">
+                <div class="hover">
+                  <div class="heart"><i class="fa-solid fa-heart "></i></div>
+                  <img src="assets/images/icons/play.svg" alt="" class="play" id="play">
+                </div>
+              </div>
+              <h2>Ringtone name</h2>
+              <div class="player" id="player">
+                <audio src="assets/music/music1.mp3" id="audio"></audio>
+                <div class="content">
+                  <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
+                  <img src="assets/images/item5-min.jpg" alt="">
+                  <h2 class="mb-3" >Ringtone name</h2>
+                  <a href="assets/music/music1.mp3" download="Tones" >
+                    <button class="mb-4 py-2 ">Download</button>
+                  </a>
+                  <div class="price text-center mb-2">5.75 SAR <span>Monthly</span> </div>
+                  <p class="text-center">include tax 15%</p>
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="image">
+                <img src="assets/images/item4-min.jpg" alt="">
+                <div class="hover">
+                  <div class="heart"><i class="fa-solid fa-heart "></i></div>
+                  <img src="assets/images/icons/play.svg" alt="" class="play">
+                </div>
+              </div>
+              <h2>Ringtone name</h2>
+              <div class="player" id="player">
+                <audio src="assets/music/music2.mp3" id="audio"></audio>
+                <div class="content">
+                  <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
+                  <img src="assets/images/item4-min.jpg" alt="">
+                  <h2 class="mb-3" >Ringtone name</h2>
+                  <a href="assets/music/music2.mp3" download="Tones" >
+                    <button class="mb-4 py-2 ">Download</button>
+                  </a>
+                  <div class="price text-center mb-2">5.75 SAR <span>Monthly</span> </div>
+                  <p class="text-center">include tax 15%</p>
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="image">
+                <img src="assets/images/item3-min.jpg" alt="">
+                <div class="hover">
+                  <div class="heart"><i class="fa-solid fa-heart "></i></div>
+                  <img src="assets/images/icons/play.svg" alt="" class="play">
+                </div>
+              </div>
+              <h2>Ringtone name</h2>
+              <div class="player" id="player">
+                <audio src="assets/music/music3.mp3" id="audio"></audio>
+                <div class="content">
+                  <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
+                  <img src="assets/images/item3-min.jpg" alt="">
+                  <h2 class="mb-3" >Ringtone name</h2>
+                  <a href="assets/music/music3.mp3" download="Tones" >
+                    <button class="mb-4 py-2 ">Download</button>
+                  </a>
+                  <div class="price text-center mb-2">5.75 SAR <span>Monthly</span> </div>
+                  <p class="text-center">include tax 15%</p>
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="image">
+                <img src="assets/images/item2-min.jpg" alt="">
+                <div class="hover">
+                  <div class="heart"><i class="fa-solid fa-heart "></i></div>
+                  <img src="assets/images/icons/play.svg" alt="" class="play">
+                </div>
+              </div>
+              <h2>Ringtone name</h2>
+              <div class="player" id="player">
+                <audio src="assets/music/music4.mp3" id="audio"></audio>
+                <div class="content">
+                  <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
+                  <img src="assets/images/item2-min.jpg" alt="">
+                  <h2 class="mb-3" >Ringtone name</h2>
+                  <a href="assets/music/music4.mp3" download="Tones" >
+                    <button class="mb-4 py-2 ">Download</button>
+                  </a>
+                  <div class="price text-center mb-2">5.75 SAR <span>Monthly</span> </div>
+                  <p class="text-center">include tax 15%</p>
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="image">
+                <img src="assets/images/item2-min.jpg" alt="">
+                <div class="hover">
+                  <div class="heart"><i class="fa-solid fa-heart "></i></div>
+                  <img src="assets/images/icons/play.svg" alt="" class="play">
+                </div>
+              </div>
+              <h2>Ringtone name</h2>
+              <div class="player" id="player">
+                <audio src="assets/music/music4.mp3" id="audio"></audio>
+                <div class="content">
+                  <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
+                  <img src="assets/images/item2-min.jpg" alt="">
+                  <h2 class="mb-3" >Ringtone name</h2>
+                  <a href="assets/music/music4.mp3" download="Tones" >
+                    <button class="mb-4 py-2 ">Download</button>
+                  </a>
+                  <div class="price text-center mb-2">5.75 SAR <span>Monthly</span> </div>
+                  <p class="text-center">include tax 15%</p>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
       </div>
+
+      <div class="type mb-5">
+
+        <div class="header d-flex align-items-center gap-3 mb-4">
+          <i class="fa-solid fa-music"></i>
+          <h2 class="mb-0">Music Type</h2>
+        </div>
+        
+        <div class="my-row swiper mySwiper">
+
+          <div class="swiper-wrapper items">
+  
+            <div class="item swiper-slide">
+              <div class="image">
+                <img src="assets/images/item5-min.jpg" alt="">
+                <div class="hover">
+                  <div class="heart"><i class="fa-solid fa-heart "></i></div>
+                  <img src="assets/images/icons/play.svg" alt="" class="play" id="play">
+                </div>
+              </div>
+              <h2>Ringtone name</h2>
+              <div class="player" id="player">
+                <audio src="assets/music/music1.mp3" id="audio"></audio>
+                <div class="content">
+                  <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
+                  <img src="assets/images/item5-min.jpg" alt="">
+                  <h2 class="mb-3" >Ringtone name</h2>
+                  <a href="assets/music/music1.mp3" download="Tones" >
+                    <button class="mb-4 py-2 ">Download</button>
+                  </a>
+                  <div class="price text-center mb-2">5.75 SAR <span>Monthly</span> </div>
+                  <p class="text-center">include tax 15%</p>
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="image">
+                <img src="assets/images/item4-min.jpg" alt="">
+                <div class="hover">
+                  <div class="heart"><i class="fa-solid fa-heart "></i></div>
+                  <img src="assets/images/icons/play.svg" alt="" class="play">
+                </div>
+              </div>
+              <h2>Ringtone name</h2>
+              <div class="player" id="player">
+                <audio src="assets/music/music2.mp3" id="audio"></audio>
+                <div class="content">
+                  <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
+                  <img src="assets/images/item4-min.jpg" alt="">
+                  <h2 class="mb-3" >Ringtone name</h2>
+                  <a href="assets/music/music2.mp3" download="Tones" >
+                    <button class="mb-4 py-2 ">Download</button>
+                  </a>
+                  <div class="price text-center mb-2">5.75 SAR <span>Monthly</span> </div>
+                  <p class="text-center">include tax 15%</p>
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="image">
+                <img src="assets/images/item3-min.jpg" alt="">
+                <div class="hover">
+                  <div class="heart"><i class="fa-solid fa-heart "></i></div>
+                  <img src="assets/images/icons/play.svg" alt="" class="play">
+                </div>
+              </div>
+              <h2>Ringtone name</h2>
+              <div class="player" id="player">
+                <audio src="assets/music/music3.mp3" id="audio"></audio>
+                <div class="content">
+                  <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
+                  <img src="assets/images/item3-min.jpg" alt="">
+                  <h2 class="mb-3" >Ringtone name</h2>
+                  <a href="assets/music/music3.mp3" download="Tones" >
+                    <button class="mb-4 py-2 ">Download</button>
+                  </a>
+                  <div class="price text-center mb-2">5.75 SAR <span>Monthly</span> </div>
+                  <p class="text-center">include tax 15%</p>
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="image">
+                <img src="assets/images/item2-min.jpg" alt="">
+                <div class="hover">
+                  <div class="heart"><i class="fa-solid fa-heart "></i></div>
+                  <img src="assets/images/icons/play.svg" alt="" class="play">
+                </div>
+              </div>
+              <h2>Ringtone name</h2>
+              <div class="player" id="player">
+                <audio src="assets/music/music4.mp3" id="audio"></audio>
+                <div class="content">
+                  <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
+                  <img src="assets/images/item2-min.jpg" alt="">
+                  <h2 class="mb-3" >Ringtone name</h2>
+                  <a href="assets/music/music4.mp3" download="Tones" >
+                    <button class="mb-4 py-2 ">Download</button>
+                  </a>
+                  <div class="price text-center mb-2">5.75 SAR <span>Monthly</span> </div>
+                  <p class="text-center">include tax 15%</p>
+                </div>
+              </div>
+            </div>
+            <div class="item swiper-slide">
+              <div class="image">
+                <img src="assets/images/item2-min.jpg" alt="">
+                <div class="hover">
+                  <div class="heart"><i class="fa-solid fa-heart "></i></div>
+                  <img src="assets/images/icons/play.svg" alt="" class="play">
+                </div>
+              </div>
+              <h2>Ringtone name</h2>
+              <div class="player" id="player">
+                <audio src="assets/music/music4.mp3" id="audio"></audio>
+                <div class="content">
+                  <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
+                  <img src="assets/images/item2-min.jpg" alt="">
+                  <h2 class="mb-3" >Ringtone name</h2>
+                  <a href="assets/music/music4.mp3" download="Tones" >
+                    <button class="mb-4 py-2 ">Download</button>
+                  </a>
+                  <div class="price text-center mb-2">5.75 SAR <span>Monthly</span> </div>
+                  <p class="text-center">include tax 15%</p>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+
     </div>
   </div>
-
 
   <!-- Footer -->
   <div class="footer">
@@ -304,6 +605,45 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- main js -->
   <script src="assets/js/main.js" ></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 20,
+      slidesPerView:4,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction:false,
+        pauseOnMouseEnter:true,
+      },
+      mousewheel: {
+        invert: false,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        450: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        992: {
+          slidesPerView: 4,
+        }
+      }
+    });
+  </script>
 
 </body>
 </html>
+
+
+
