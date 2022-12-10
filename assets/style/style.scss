@@ -261,6 +261,7 @@ svg {
     border: 2px solid $primary;
     color: $primary;
     text-transform: capitalize;
+    font-weight: 500;
     
     &:focus {
       outline: none;

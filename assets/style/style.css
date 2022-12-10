@@ -204,6 +204,7 @@ svg {
   border: 2px solid #810567;
   color: #810567;
   text-transform: capitalize;
+  font-weight: 500;
 }
 .select-type select:focus {
   outline: none;
