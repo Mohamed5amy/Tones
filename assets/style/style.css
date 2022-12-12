@@ -510,6 +510,12 @@ svg {
   color: #454545;
 }
 
+.swiper-button-next, .swiper-button-prev {
+  color: #810567 !important;
+  font-weight: 900;
+  text-shadow: 0px 0px 5px black;
+}
+
 #tones-type {
   padding-top: 50px;
   padding-bottom: 150px;

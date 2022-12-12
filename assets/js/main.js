@@ -23,6 +23,8 @@
   console.log(players)
   
   items.forEach((item) => {
+
+    const mainItem = item
     const player = item.children[2]
     const audio = item.children[2].children[0]
     const playBtn = item.children[0].children[1].children[1]
@@ -52,6 +54,22 @@
       player.classList.remove("active")
     })
     
+    mainItem.addEventListener("mouseenter" , () => {
+
+      songs.forEach((song) => {
+        song.pause()
+      })
+      
+      audio.play()
+    })
+
+    mainItem.addEventListener("mouseleave" , () => {
+
+      songs.forEach((song) => {
+        song.pause()
+      })
+      
+    })
     
   })
 
