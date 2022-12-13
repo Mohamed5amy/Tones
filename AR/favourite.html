@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/style/style.css">
+
+  <!-- Font Awesom -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/images//icons/title-icon.png">
+
+  <!-- Title -->
+  <title>Tones</title>
+
+</head>
+
+
+
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+
+    <div class="container d-flex align-items-center justify-content-between gap-3">
+
+      <div class="logo">
+        <a href="/">        
+          <img src="assets//images//icons/logo.svg" alt="">
+        </a>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="بحث...">
+        <img src="assets//images//icons/search.svg" alt="">
+      </div>
+
+      <div class="d-flex align-items-center gap-5">
+
+        <div class="icons d-flex align-items-center gap-4">
+          <div class="lang rounded"><a href="/">EN</a></div>
+          <a href="/favourite.html"><img src="assets/images/icons/heart.svg" alt=""></a>
+        </div>
+
+        <div class="profile d-flex align-items-center gap-2">
+
+          <div class="image"><a href="/profile"><img src="assets/images/person.jpg" alt=""></a></div>
+
+          <div class="name">
+            <h3>اهلا</h3>
+            <h2>محمد احمد</h2>
+          </div>
+
+          <img src="assets/images/icons/down-arrow.svg" alt="" id="arrow">
+          
+        </div>
+
+      </div>
+
+      <div class="menu-btn" id="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <div class="menu" id="menu">
+        <a href="/favourite.html"><li>المفضلة</li></a>
+        <a href="/profile.html"><li>الملف الشخصي</li></a>
+        <a href="/downloads.html"><li>التحميلات</li></a>
+        <a href="/"><li class="sign-out">تسجيل الخروج</li></a>
+        <a href="/"><li>English</li></a>
+      </div>
+      
+    </div>
+    
+  </nav>
+
+
+  <!-- Banner -->
+  <div class="banner">
+
+    <div class="container">
+
+      <img src="assets/images/favourite.svg" class="d-block w-100" alt="...">
+      
+    </div>
+    
+  </div>
+
+  <!-- selection -->
+  <!-- <div class="selection pt-5">
+    <div class="container flex-wrap d-flex align-items-center justify-content-between gap-3">
+      <span class="py-2 text-center ">Music Type</span>
+      <span class="py-2 text-center ">Music Type</span>
+      <span class="py-2 text-center ">Music Type</span>
+      <span class="py-2 text-center ">Music Type</span>
+      <span class="py-2 text-center ">Music Type</span>
+      <span class="py-2 text-center ">Music Type</span>
+    </div>
+  </div> -->
+  
+  <!-- Tones -->
+  <div class="tones" id="tones-type">
+    <div class="container">
+      <div class="row">
+
+        <div class="item col-6 col-md-4 col-lg-3 mb-5">
+          <div class="image">
+            <img src="assets/images/item5-min.jpg" alt="">
+            <div class="hover">
+              <div class="heart"><i class="fa-solid fa-heart "></i></div>
+              <img src="assets/images/icons/play.svg" alt="" class="play" id="play">
+            </div>
+          </div>
+          <h2>اسم النغمة </h2>
+          <div class="player" id="player">
+            <audio src="assets/music/music1.mp3" id="audio"></audio>
+            <div class="content">
+              <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
+              <img src="assets/images/item5-min.jpg" alt="">
+              <h2 class="mb-3" >اسم النغمة </h2>
+              <a href="assets/music/music1.mp3" download="Tones" >
+                <button class="mb-4 py-2 ">تحميل</button>
+              </a>
+              <div class="price text-center mb-2">5.75 ريال <span>شهريا</span> </div>
+              <p class="text-center"> 15% يشمل الضريبة</p>
+            </div>
+          </div>
+        </div>
+        <div class="item col-6 col-md-4 col-lg-3 mb-5">
+          <div class="image">
+            <img src="assets/images/item5-min.jpg" alt="">
+            <div class="hover">
+              <div class="heart"><i class="fa-solid fa-heart "></i></div>
+              <img src="assets/images/icons/play.svg" alt="" class="play" id="play">
+            </div>
+          </div>
+          <h2>اسم النغمة </h2>
+          <div class="player" id="player">
+            <audio src="assets/music/music1.mp3" id="audio"></audio>
+            <div class="content">
+              <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
+              <img src="assets/images/item5-min.jpg" alt="">
+              <h2 class="mb-3" >اسم النغمة </h2>
+              <a href="assets/music/music1.mp3" download="Tones" >
+                <button class="mb-4 py-2 ">تحميل</button>
+              </a>
+              <div class="price text-center mb-2">5.75 ريال <span>شهريا</span> </div>
+              <p class="text-center"> 15% يشمل الضريبة</p>
+            </div>
+          </div>
+        </div>
+        <div class="item col-6 col-md-4 col-lg-3 mb-5">
+          <div class="image">
+            <img src="assets/images/item5-min.jpg" alt="">
+            <div class="hover">
+              <div class="heart"><i class="fa-solid fa-heart "></i></div>
+              <img src="assets/images/icons/play.svg" alt="" class="play" id="play">
+            </div>
+          </div>
+          <h2>اسم النغمة </h2>
+          <div class="player" id="player">
+            <audio src="assets/music/music1.mp3" id="audio"></audio>
+            <div class="content">
+              <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
+              <img src="assets/images/item5-min.jpg" alt="">
+              <h2 class="mb-3" >اسم النغمة </h2>
+              <a href="assets/music/music1.mp3" download="Tones" >
+                <button class="mb-4 py-2 ">تحميل</button>
+              </a>
+              <div class="price text-center mb-2">5.75 ريال <span>شهريا</span> </div>
+              <p class="text-center"> 15% يشمل الضريبة</p>
+            </div>
+          </div>
+        </div>
+        <div class="item col-6 col-md-4 col-lg-3 mb-5">
+          <div class="image">
+            <img src="assets/images/item5-min.jpg" alt="">
+            <div class="hover">
+              <div class="heart"><i class="fa-solid fa-heart "></i></div>
+              <img src="assets/images/icons/play.svg" alt="" class="play" id="play">
+            </div>
+          </div>
+          <h2>اسم النغمة </h2>
+          <div class="player" id="player">
+            <audio src="assets/music/music1.mp3" id="audio"></audio>
+            <div class="content">
+              <div class="icon" id="exit"><i class="fa-solid fa-xmark"></i></div>
+              <img src="assets/images/item5-min.jpg" alt="">
+              <h2 class="mb-3" >اسم النغمة </h2>
+              <a href="assets/music/music1.mp3" download="Tones" >
+                <button class="mb-4 py-2 ">تحميل</button>
+              </a>
+              <div class="price text-center mb-2">5.75 ريال <span>شهريا</span> </div>
+              <p class="text-center"> 15% يشمل الضريبة</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- <div class="pagination d-flex justify-content-center gap-4">
+        <div class="num active">1</div>
+        <div class="num">2</div>
+        <div class="num">3</div>
+        <div class="num">4</div>
+      </div> -->
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <div class="footer">
+
+    <div class="container">
+
+      <div class="logo mb-4">
+        <a href="/"><img src="assets/images/icons/footer-logo.svg" alt=""></a>
+      </div>
+
+      <div class="row">
+
+        <div class=" col-12 col-sm-6 col-md-2">
+          <a href="/"><li>الشروط و الاحكام</li></a>
+          <a href=""><li>شروط الاستخدام</li></a>
+          <a href=""><li>اشتراك</li></a>
+        </div>
+
+        <div class=" col-12 col-sm-6 col-md-2">
+          <a href="/"><li>الشروط و الاحكام</li></a>
+          <a href=""><li>شروط الاستخدام</li></a>
+          <a href=""><li>اشتراك</li></a>
+        </div>
+
+        <div class=" col-12 col-sm-6 col-md-2">
+          <a href="/"><li>الشروط و الاحكام</li></a>
+          <a href=""><li>شروط الاستخدام</li></a>
+          <a href=""><li>اشتراك</li></a>
+        </div>
+        
+      </div>
+
+      <p class="rights">جميع الحقوق محفوظة 2022</p>
+      
+    </div>
+
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <!-- Bootstrab -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Font awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- main js -->
+  <script src="assets/js/main.js" ></script>
+
+</body>
+</html>
