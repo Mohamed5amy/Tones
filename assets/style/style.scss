@@ -809,6 +809,107 @@ svg {
   }
 }
 
+// profile 
+.profileData {
+
+  margin-bottom: 200px;
+  
+  .container {
+    padding: 20px 50px 200px;
+    background-color: #81056613;
+
+    .image {
+
+      position: relative;
+      width: fit-content;
+      overflow: hidden;
+      margin: 0 auto 50px;
+      
+      input {display: none;}
+
+      &:hover {
+        label {display: flex;}
+      }
+      
+      label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.555);
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        display: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      
+      img {
+        width: 105px;
+        height: 105px;
+      }
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+    
+    form {
+      .input {
+        position: relative;
+        width: fit-content;
+
+        label {
+          position: absolute;
+          right: 5px;
+          bottom: 8px;
+          font-size: 11px;
+          font-weight: 800;
+          color: #810567;
+          cursor: pointer;
+          text-transform: uppercase;
+        }
+        
+        input {
+          border: none;
+          border-bottom: 1px solid $primary;
+          padding: 8px 30px 8px 0;
+          background-color: transparent;
+          font-size: 14px;
+          font-weight: 500;
+          color: #24242e;
+          width: 450px;
+
+          &:focus {
+            outline: none;
+          }
+
+          &::placeholder {
+            font-size: 14px;
+            font-weight: 500;
+            color: #24242e;
+          }
+        }
+        
+      }
+    }
+    
+    
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+
+}
+
 //footer
 .footer {
   background-color: #383838;
@@ -905,5 +1006,24 @@ svg {
 
   .carousel-control-next, .carousel-control-prev {
     width: 8%;
+  }
+
+  .profileData {
+    
+    .container {
+      
+      form {
+        .input {
+          width: 100%;
+          input {
+            width: 100%;
+          }
+          
+        }
+      }
+      
+    }
+  
+  
   }
 }
