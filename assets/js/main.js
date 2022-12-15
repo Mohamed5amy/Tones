@@ -12,6 +12,7 @@
     menu.classList.toggle("active")
   })
 
+
   //  Player 
 
   const items = document.querySelectorAll(".tones .item")
@@ -53,24 +54,24 @@
       audio.pause()
       player.classList.remove("active")
     })
+
+
     
-    mainItem.addEventListener("mouseenter" , () => {
+    // mainItem.addEventListener("mouseenter" , () => {
 
-      songs.forEach((song) => {
-        song.pause()
-      })
+    //   songs.forEach((song) => {
+    //     song.pause()
+    //   })
       
-      audio.play()
-    })
+    //   audio.play()
+    // })
 
-    mainItem.addEventListener("mouseleave" , () => {
+    // mainItem.addEventListener("mouseleave" , () => {
 
-      songs.forEach((song) => {
-        song.pause()
-      })
+    //   songs.forEach((song) => {
+    //     song.pause()
+    //   })
       
-    })
+    // })
     
   })
-
-
