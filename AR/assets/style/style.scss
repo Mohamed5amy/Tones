@@ -173,7 +173,6 @@ svg {
   
 }
 
-
 .music-pop-up {
   
   position: fixed;
@@ -285,6 +284,7 @@ svg {
     flex: 1;
     max-width: 320px;
     position: relative;
+    direction: rtl;
 
     input {
       width: 100%;
@@ -365,7 +365,7 @@ svg {
     display: none;
     position: absolute;
     top: 110%;
-    left: 0;
+    right: 0;
     width: 200px;
     background-color: $primary;
     z-index: 100000;
@@ -1100,6 +1100,14 @@ svg {
     width: 8%;
   }
 
+  .carousel-item {
+    img {
+      height: 120px;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+
   .profileData {
     
     .container {
@@ -1117,5 +1125,13 @@ svg {
     }
   
   
+  }
+
+  #tones-home .my-row .image {
+    height: 200px;
+  }
+
+  #tones-home .my-row h2 {
+    font-size: 16px;
   }
 }

@@ -981,10 +981,22 @@ svg {
   .carousel-control-next, .carousel-control-prev {
     width: 8%;
   }
+  .carousel-item img {
+    height: 120px;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .profileData .container form .input {
     width: 100%;
   }
   .profileData .container form .input input {
     width: 100%;
+  }
+  #tones-home .my-row .image {
+    height: 200px;
+  }
+  #tones-home .my-row h2 {
+    font-size: 16px;
   }
 }

@@ -265,6 +265,7 @@ svg {
           flex: 1;
   max-width: 320px;
   position: relative;
+  direction: rtl;
 }
 .navbar .search input {
   width: 100%;
@@ -332,7 +333,7 @@ svg {
   display: none;
   position: absolute;
   top: 110%;
-  left: 0;
+  right: 0;
   width: 200px;
   background-color: #810567;
   z-index: 100000;
@@ -983,10 +984,22 @@ svg {
   .carousel-control-next, .carousel-control-prev {
     width: 8%;
   }
+  .carousel-item img {
+    height: 120px;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .profileData .container form .input {
     width: 100%;
   }
   .profileData .container form .input input {
     width: 100%;
+  }
+  #tones-home .my-row .image {
+    height: 200px;
+  }
+  #tones-home .my-row h2 {
+    font-size: 16px;
   }
 }
