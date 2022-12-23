@@ -95,8 +95,8 @@ svg {
   padding: 12px 24px;
   border-radius: 7px;
   border: solid 1px #810567;
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   color: #810567;
   width: 270px;
   margin-bottom: 23px;
@@ -216,33 +216,27 @@ svg {
   -o-border-radius: 20px;
 }
 .music-pop-up .content h2 {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 900;
+  color: #810567;
 }
 .music-pop-up .content button {
   width: 100%;
-  background-color: #810567;
+  background-color: white;
   border: none;
-  color: white;
   font-weight: 500;
+  border-radius: 4px;
+  border: solid 0.5px #810567;
+  font-size: 14px;
+  color: #810567;
 }
 .music-pop-up .content button:hover {
   background-color: #580346;
+  color: white;
 }
 .music-pop-up .content .price {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 0.44;
-  color: #ac0a93;
-}
-.music-pop-up .content .price span {
-  font-size: 10px;
-  font-weight: 600;
-  line-height: 0.4;
-}
-.music-pop-up .content p {
-  font-size: 10px;
-  font-weight: 600;
-  color: #454545;
+  font-size: 11px;
+  color: #696969;
 }
 
 .navbar {
@@ -295,6 +289,16 @@ svg {
   font-size: 10px;
   color: white;
   cursor: pointer;
+  width: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .navbar .profile .image {
   width: 33px;
@@ -320,6 +324,12 @@ svg {
   font-weight: 600;
   line-height: 0.45;
   color: #24242e;
+}
+.navbar .profile a:hover {
+  color: #810567;
+}
+.navbar .profile span {
+  visibility: hidden;
 }
 .navbar .menu-btn {
   font-size: 25px;
@@ -419,7 +429,7 @@ svg {
   padding-bottom: 150px;
 }
 #tones-home .type > .header svg {
-  font-size: 40px;
+  font-size: 35px;
   color: #810567;
 }
 #tones-home .type > .header h2 {
@@ -433,6 +443,9 @@ svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+#tones-home .my-row .item {
+  cursor: pointer;
 }
 #tones-home .my-row h2 {
   font-size: 20px;
@@ -592,9 +605,19 @@ svg {
 }
 
 .swiper-button-next, .swiper-button-prev {
-  color: #810567 !important;
-  font-weight: 900;
-  text-shadow: 0px 0px 5px black;
+  color: rgba(255, 255, 255, 0.759) !important;
+  font-weight: 600;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  color: white !important;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 30px !important;
 }
 
 #tones-type {

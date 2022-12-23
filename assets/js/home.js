@@ -8,9 +8,11 @@
     menu.classList.toggle("active")
   })
 
-  arrow.addEventListener("click" , () => {
-    menu.classList.toggle("active")
-  })
+  if(arrow) {
+    arrow.addEventListener("click" , () => {
+      menu.classList.toggle("active")
+    })
+  }
 
 
   // Player
@@ -33,7 +35,7 @@
 
     const mainItem = item
     const audio = item.children[0]
-    const playBtn = item.children[1].children[1].children[1]
+    const playBtn = item
     const heart = item.children[1].children[1].children[0]
     const songs = document.querySelectorAll("audio")
     const img = item.children[1].children[0]
@@ -48,7 +50,7 @@
 
       // fetch data
       mainImage.src = img.src;
-      mainTitle.innerHTML = title.innerHTML;
+      // mainTitle.innerHTML = title.innerHTML;
       mainDownload.href = audio.src
       mainPrice.innerHTML = `${price.innerHTML} SAR <span>Monthly</span>`
       
@@ -73,7 +75,6 @@
 
 
   // <!-- Default number and exit -->
-    document.getElementById("myNumber").defaultValue = 996 ;
 
     const exitReg = document.getElementById("exit-reg")
     const regBox = document.querySelector(".register")

@@ -105,8 +105,8 @@ svg {
         padding: 12px 24px;
         border-radius: 7px;
         border: solid 1px #810567;
-        font-size: 11px;
-        font-weight: 600;
+        font-size: 14px;
+        font-weight: 500;
         color: $primary;
         width: 270px;
 
@@ -219,38 +219,31 @@ svg {
     }
 
     h2 {
-      font-size: 16px;
+      font-size: 14px;
+      font-weight: 900;
+      color: #810567;
     }
 
     button {
       width: 100%;
-      background-color: $primary;
+      background-color: white;
       border: none;
-      color: white;
       font-weight: 500;
+      border-radius: 4px;
+      border: solid 0.5px #810567;
+      font-size: 14px;
+      color: #810567;
+
 
       &:hover {
         background-color: #580346;
+        color: white;
       }
     }
 
     .price {
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 0.44;
-      color: #ac0a93;
-
-      span {
-        font-size: 10px;
-        font-weight: 600;
-        line-height: 0.4;
-      }
-    }
-
-    p {
-      font-size: 10px;
-      font-weight: 600;
-      color: #454545;
+      font-size: 11px;
+      color: #696969;
     }
 
     border-radius:22px ;
@@ -321,6 +314,10 @@ svg {
       font-size: 10px;
       color: white;
       cursor: pointer;
+      width: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
   
@@ -352,6 +349,9 @@ svg {
         line-height: 0.45;
         color: #24242e;
       }
+    }
+    a:hover {
+      color: $primary;
     }
   }
 
@@ -481,7 +481,7 @@ svg {
 
   .type > .header {
     svg {
-      font-size: 40px;
+      font-size: 35px;
       color: $primary;
     }
 
@@ -489,6 +489,10 @@ svg {
       font-weight: 600;
       font-size: 30px;
     }
+  }
+
+  .item {
+    cursor: pointer;
   }
 
   .my-row {
@@ -676,9 +680,19 @@ svg {
 }
 // Swiper 
 .swiper-button-next, .swiper-button-prev {
-  color: $primary !important;
-  font-weight: 900;
-  text-shadow: 0px 0px 5px black;
+  color: rgba(255, 255, 255, 0.759) !important;
+  font-weight: 600;
+  &:hover {
+    color: white !important;
+  }
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 30px !important;
 }
 // Type Page 
 #tones-type {
@@ -1008,7 +1022,11 @@ svg {
   padding-top: 60px;
   padding-bottom: 20px;
 
-
+  .logo {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
   .row {
     border-bottom: 1px solid $primary;
     padding-bottom: 40px;

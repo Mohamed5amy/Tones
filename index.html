@@ -52,7 +52,7 @@
 
       <form action="">
         <input type="text" placeholder="Name">
-        <input type="number" id="myNumber">
+        <input type="number" placeholder="Number">
 
         <button>Register</button>
       </form>
@@ -91,17 +91,17 @@
 
       <img src="" alt="" id="image">
 
-      <h2 class="mb-3 text-center" id="title"></h2>
+      <h2 class="mb-3 text-center">Press Here To Download</h2>
 
       <a href="" download="Tones" id="download" >
 
-        <button class="mb-4 py-2 ">Download</button>
+        <button class="mb-2 py-2 d-flex align-items-center justify-content-center gap-2">Download <i class="fa-solid fa-cloud-arrow-down"></i></button>
 
       </a>
 
       <div class="price text-center mb-2" id="price"> </div>
 
-      <p class="text-center">include tax 15%</p>
+      <!-- <p class="text-center">include tax 15%</p> -->
 
     </div>
 
@@ -126,21 +126,14 @@
       <div class="d-flex align-items-center gap-5">
 
         <div class="icons d-flex align-items-center gap-4">
-          <div class="lang rounded"><a href="/">AR</a></div>
-          <a href="/favourite.html"><img src="assets/images/icons/heart.svg" alt=""></a>
+          <div class="lang rounded"><a href="http://127.0.0.1:5500/AR/index.html">AR</a></div>
         </div>
 
         <div class="profile d-flex align-items-center gap-2">
-
-          <div class="image"><a href="/profile"><img src="assets/images/person.jpg" alt=""></a></div>
-
-          <div class="name">
-            <h3>Hello</h3>
-            <h2>Your Name</h2>
+          <div class="top-right links d-flex align-items-center gap-4">
+            <a href="https://rbts.online/register_ar">Login<span>i</span></a>
+            <a href="https://rbts.online/login_ar">Register</a>
           </div>
-
-          <img src="assets/images/icons/down-arrow.svg" alt="" id="arrow">
-          
         </div>
 
       </div>
@@ -229,10 +222,10 @@
       
       <div class="type mb-5">
 
-        <div class="header d-flex align-items-center gap-3 mb-4">
+        <a href="/" class="header d-flex align-items-center gap-3 mb-4">
           <i class="fa-solid fa-music"></i>
           <h2 class="mb-0">Music Type</h2>
-        </div>
+        </a>
         
         <div class="my-row swiper mySwiper">
 
@@ -309,10 +302,10 @@
 
       <div class="type mb-5">
 
-        <div class="header d-flex align-items-center gap-3 mb-4">
+        <a href="/" class="header d-flex align-items-center gap-3 mb-4">
           <i class="fa-solid fa-music"></i>
           <h2 class="mb-0">Music Type</h2>
-        </div>
+        </a>
         
         <div class="my-row swiper mySwiper">
 
@@ -389,10 +382,10 @@
 
       <div class="type mb-5">
 
-        <div class="header d-flex align-items-center gap-3 mb-4">
+        <a href="/" class="header d-flex align-items-center gap-3 mb-4">
           <i class="fa-solid fa-music"></i>
           <h2 class="mb-0">Music Type</h2>
-        </div>
+        </a>
         
         <div class="my-row swiper mySwiper">
 
@@ -534,9 +527,6 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           },
-        mousewheel: {
-          invert: false,
-        },
         breakpoints: {
           0: {
             slidesPerView: 2,
